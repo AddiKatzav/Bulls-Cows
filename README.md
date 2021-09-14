@@ -8,3 +8,24 @@ One player thinks of a number, while the other player tries to guess it. The num
 1 bull means the guess contains and the target number have 1 digit in common, and in the correct position. 1 cow means the guess and the target have 1 digit in common, but not in correct position.
 
 The game ends with win if one of the player guessed right the other 4 digits. It can also ends with tie if both of the players guessed right the other 4 digits in the same turn.
+
+## Server
+The server manages the game. It receives incoming messages from the client, calculates the game results, and distributes messages between clients. The server waits for two clients to connect, then starts the game, with respect to all the rules mentioned above.
+
+## Client
+The client is the User Interface of the game. The software receives commands from the player, and sends them to the server. The software receives updates from the server, and presents them to the player. The client software does not understand the rules of the game. It is a bridge between the players and the server software.
+
+## Programming Conepts
+Utilizing thread concepts in operating systems in general and Windows particularly.
+
+• Working with several threads in parallel- Multi-threading.
+
+• Use Mutex and Semaphore to synchronize access to shared resources between threads.
+
+• Use Mutex and Semaphore to synchronize access to shared memory between threads.
+
+Deep utilizing of computer communication.
+
+• Using Sockets TCP:
+
+WSAStartup, WSACleanup ,socket ,bind ,listen ,accept ,recv ,connect ,closesocket ,send.
